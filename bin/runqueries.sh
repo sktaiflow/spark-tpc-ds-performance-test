@@ -2,8 +2,8 @@
 
 SPARK_HOME=$1
 OUTPUT_DIR=$2
-DRIVER_OPTIONS="--driver-memory 4g --driver-java-options -Dlog4j.configuration=file:///${OUTPUT_DIR}/log4j.properties"
-EXECUTOR_OPTIONS="--executor-memory 2g --num-executors 1 --conf spark.executor.extraJavaOptions=-Dlog4j.configuration=file:///${OUTPUT_DIR}/log4j.properties --conf spark.sql.crossJoin.enabled=true"
+DRIVER_OPTIONS="--driver-memory 8g --driver-java-options -Dlog4j.configuration=file:///${OUTPUT_DIR}/log4j.properties"
+EXECUTOR_OPTIONS="--executor-memory 8g --num-executors 8 --conf spark.executor.extraJavaOptions=-Dlog4j.configuration=file:///${OUTPUT_DIR}/log4j.properties --conf spark.sql.crossJoin.enabled=true"
 
 cd $SPARK_HOME
 divider===============================
