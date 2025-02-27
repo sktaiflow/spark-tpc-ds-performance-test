@@ -1,0 +1,6 @@
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+Spark Web UI available at http://jupyter-dev.yks.sktai.io/user/1112390/spark-ui:4040
+Spark master: k8s://https://api.yks.sktai.io:6443, Application Id: spark-0d271ee71a8549998201e7228f473493
+25818
+Time taken: 64.388 seconds, Fetched 1 row(s)

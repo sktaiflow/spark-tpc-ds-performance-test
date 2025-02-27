@@ -1,0 +1,53 @@
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+Spark Web UI available at http://jupyter-dev.yks.sktai.io/user/1112390/spark-ui:4040
+Spark master: k8s://https://api.yks.sktai.io:6443, Application Id: spark-d8c64e6f4a994b01aa40ab34fa1e9b5b
+Time taken: 1.111 seconds
+30
+Time taken: 6.497 seconds, Fetched 1 row(s)
+20400
+Time taken: 5.349 seconds, Fetched 1 row(s)
+14404374
+Time taken: 5.041 seconds, Fetched 1 row(s)
+143997065
+Time taken: 2.455 seconds, Fetched 1 row(s)
+2000000
+Time taken: 0.704 seconds, Fetched 1 row(s)
+1000000
+Time taken: 0.646 seconds, Fetched 1 row(s)
+1920800
+Time taken: 0.579 seconds, Fetched 1 row(s)
+73049
+Time taken: 0.265 seconds, Fetched 1 row(s)
+7200
+Time taken: 0.517 seconds, Fetched 1 row(s)
+20
+Time taken: 0.155 seconds, Fetched 1 row(s)
+399330000
+Time taken: 0.617 seconds, Fetched 1 row(s)
+204000
+Time taken: 0.245 seconds, Fetched 1 row(s)
+1000
+Time taken: 0.287 seconds, Fetched 1 row(s)
+75
+Time taken: 0.196 seconds, Fetched 1 row(s)
+20
+Time taken: 0.191 seconds, Fetched 1 row(s)
+402
+Time taken: 0.17 seconds, Fetched 1 row(s)
+28795080
+Time taken: 0.324 seconds, Fetched 1 row(s)
+287997024
+Time taken: 1.308 seconds, Fetched 1 row(s)
+86400
+Time taken: 0.217 seconds, Fetched 1 row(s)
+15
+Time taken: 0.17 seconds, Fetched 1 row(s)
+2040
+Time taken: 0.134 seconds, Fetched 1 row(s)
+7197670
+Time taken: 0.589 seconds, Fetched 1 row(s)
+72001237
+Time taken: 0.525 seconds, Fetched 1 row(s)
+24
+Time taken: 0.178 seconds, Fetched 1 row(s)

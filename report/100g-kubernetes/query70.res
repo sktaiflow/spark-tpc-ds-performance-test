@@ -1,0 +1,25 @@
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+Spark Web UI available at http://jupyter-dev.yks.sktai.io/user/1112390/spark-ui:4040
+Spark master: k8s://https://api.yks.sktai.io:6443, Application Id: spark-25a5f5b923a94c04b26acc2217558895
+-4.3989851063259995E10	NULL	NULL	2	1
+-3.07259237964E9	MO	NULL	1	1
+-3.5251445931100006E9	GA	NULL	1	2
+-4.390699028490002E9	AL	NULL	1	3
+-4.827829295770004E9	OH	NULL	1	4
+-4.842861219400002E9	MI	NULL	1	5
+-5.500924087220006E9	TN	NULL	1	6
+-5.52144475153E9	LA	NULL	1	7
+-5.935200524019995E9	SC	NULL	1	8
+-6.373155184079993E9	SD	NULL	1	9
+-4.390699028490002E9	AL	Walker County	0	1
+-3.5251445931100006E9	GA	Barrow County	0	1
+-5.52144475153E9	LA	Franklin Parish	0	1
+-4.842861219400002E9	MI	Luce County	0	1
+-3.07259237964E9	MO	Daviess County	0	1
+-4.827829295770004E9	OH	Richland County	0	1
+-2.1883329328000015E8	SC	NULL	0	1
+-5.716367230739997E9	SC	Fairfield County	0	2
+-6.373155184079993E9	SD	Ziebach County	0	1
+-5.500924087220006E9	TN	Williamson County	0	1
+Time taken: 40.385 seconds, Fetched 20 row(s)
