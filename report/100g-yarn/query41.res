@@ -1,0 +1,105 @@
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+Hive Session ID = a40800ab-9595-4d6c-916d-f86c98f4db15
+Spark master: yarn, Application Id: application_1736389715788_28166
+ableantiableablecally
+ableantieingpripri
+ableationableought
+ableationesecallyeing
+ablebareingationeingought
+ablecallyprieingbarought
+ableeingationpricallyought
+ableeingbareingantiought
+ableeseeingoughtpri
+ableeseeingprianti
+ablen stableationcally
+ablen stoughtantiation
+antiantiationeingcally
+antibaresecallycallyought
+anticallyeingationbarought
+anticallyeingese
+anticallyprianticallyought
+antieingeingoughtable
+antieseeingn stableought
+antioughteingn stpri
+antipriationeseese
+antipriesen stoughtought
+antiprioughtbarbarable
+antipripriablebarought
+ationableeingeseanti
+ationantiantibarcally
+ationantieingbaranti
+ationantipriantiantiought
+ationbarableableeingought
+ationbareingesebarought
+ationbarpriationeing
+ationeseationationbarought
+ationeseeseablebarought
+ationn stcallyesecallyought
+ationn steseeingable
+ationoughtn steing
+ationoughtn stn stationought
+barableantiableableought
+barationationcallyoughtought
+barbarbareseoughtought
+bareingationpricallyought
+bareingeingeseese
+barn stesecallyeing
+barn stoughtantiation
+barn stoughtprin stought
+baroughtantibarese
+barpriesecallyeseought
+callyableablen steseought
+callyableeingeseanti
+callyantiantibarcally
+callyantioughtpri
+callyantipriantiantiought
+callycallyeingese
+callycallyn stationantiought
+callycallyprianticallyought
+callyeingeseantiationought
+callyeseantieingbarought
+callyesecallycallyn st
+callyeseeseablebarought
+callyn stcallyesecallyought
+callypriesen stoughtought
+eingablebaroughtcally
+eingableesecallyeseought
+eingableoughtn stableought
+eingantiablebarcally
+einganticallyn st
+eingationcallyantieingought
+eingbarableableeingought
+eingbarn steingought
+eingcallypribarpriought
+eingesebaresen stought
+eingn stoughtbaroughtought
+eingoughtn stbarpri
+eseablepriableese
+esebarantin stantiought
+esecallyableeseanti
+esecallyationoughtationought
+esecallycallyationbarought
+esecallyprianticallyought
+eseeseeingprianti
+eseoughtn steingableought
+n stablebaroughtcally
+n stableesecallyeseought
+n stableoughtoughtbarable
+n stantiesecallypriought
+n steingationantipriought
+n steingesecallyeing
+n stesebaroughtbarable
+n stn stn stprioughtought
+n stprin stanticallyought
+oughtableeingbaroughtought
+oughtableprieingantiought
+oughtationableought
+oughtationationcallyoughtought
+oughtationesecallyeing
+oughtationpriationese
+oughteingationpricallyought
+oughtn stoughtantiation
+oughtoughtableantipriought
+oughtoughtantibarese
+Time taken: 23.583 seconds, Fetched 100 row(s)

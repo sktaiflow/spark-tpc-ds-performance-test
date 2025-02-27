@@ -1,0 +1,28 @@
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+Hive Session ID = db30bcad-b67b-40c0-af97-224daa09ac40
+Spark master: yarn, Application Id: application_1736389715788_28097
+30
+20400
+14404374
+143997065
+2000000
+1000000
+1920800
+73049
+7200
+20
+399330000
+204000
+1000
+75
+20
+402
+28795080
+287997024
+86400
+15
+2040
+7197670
+72001237
+24

@@ -1,0 +1,53 @@
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+Hive Session ID = db30bcad-b67b-40c0-af97-224daa09ac40
+Spark master: yarn, Application Id: application_1736389715788_28097
+Time taken: 2.961 seconds
+30
+Time taken: 5.22 seconds, Fetched 1 row(s)
+20400
+Time taken: 0.407 seconds, Fetched 1 row(s)
+14404374
+Time taken: 3.9 seconds, Fetched 1 row(s)
+143997065
+Time taken: 8.32 seconds, Fetched 1 row(s)
+2000000
+Time taken: 0.288 seconds, Fetched 1 row(s)
+1000000
+Time taken: 4.181 seconds, Fetched 1 row(s)
+1920800
+Time taken: 0.228 seconds, Fetched 1 row(s)
+73049
+Time taken: 0.207 seconds, Fetched 1 row(s)
+7200
+Time taken: 0.177 seconds, Fetched 1 row(s)
+20
+Time taken: 0.178 seconds, Fetched 1 row(s)
+399330000
+Time taken: 8.226 seconds, Fetched 1 row(s)
+204000
+Time taken: 3.921 seconds, Fetched 1 row(s)
+1000
+Time taken: 0.158 seconds, Fetched 1 row(s)
+75
+Time taken: 0.144 seconds, Fetched 1 row(s)
+20
+Time taken: 0.146 seconds, Fetched 1 row(s)
+402
+Time taken: 0.151 seconds, Fetched 1 row(s)
+28795080
+Time taken: 7.433 seconds, Fetched 1 row(s)
+287997024
+Time taken: 8.448 seconds, Fetched 1 row(s)
+86400
+Time taken: 0.174 seconds, Fetched 1 row(s)
+15
+Time taken: 0.154 seconds, Fetched 1 row(s)
+2040
+Time taken: 0.142 seconds, Fetched 1 row(s)
+7197670
+Time taken: 8.002 seconds, Fetched 1 row(s)
+72001237
+Time taken: 8.342 seconds, Fetched 1 row(s)
+24
+Time taken: 0.15 seconds, Fetched 1 row(s)
