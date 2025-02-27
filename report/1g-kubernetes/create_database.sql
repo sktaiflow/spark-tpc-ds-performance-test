@@ -1,0 +1,2 @@
+CREATE DATABASE IF NOT EXISTS tpcds1g
+COMMENT 'For TPCDS at 1GB scale factor';

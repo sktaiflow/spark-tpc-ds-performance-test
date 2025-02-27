@@ -1,0 +1,105 @@
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+Spark Web UI available at http://jupyter-dev.yks.sktai.io/user/1112390/spark-ui:4040
+Spark master: k8s://https://api.yks.sktai.io:6443, Application Id: spark-f1b73b4635a34f598afebd83ef48faf6
+-0.4346272450600233	NULL	NULL	2	1
+-0.44572554799116226	Electronics	NULL	1	1
+-0.43905844420578194	Children	NULL	1	2
+-0.43537480144353324	Home	NULL	1	3
+-0.4351348962970814	Sports	NULL	1	4
+-0.4347869892899197	Shoes	NULL	1	5
+-0.4339369780480888	Men	NULL	1	6
+-0.4328141554316284	Books	NULL	1	7
+-0.4327856083407477	Women	NULL	1	8
+-0.4288392607877549	Jewelry	NULL	1	9
+-0.42839677730714654	Music	NULL	1	10
+-0.4083640200805759	NULL	NULL	1	11
+-0.5750622978195813	NULL	swimwear	0	1
+-0.5247755878927038	NULL	pants	0	2
+-0.5163480072331637	NULL	sports-apparel	0	3
+-0.4970173438094436	NULL	flatware	0	4
+-0.4211569786105794	NULL	scanners	0	5
+-0.4149540414628413	NULL	NULL	0	6
+-0.4121245816291348	NULL	womens	0	7
+-0.41124201443701813	NULL	glassware	0	8
+-0.340050506564173	NULL	dresses	0	9
+-0.2853912230614344	NULL	semi-precious	0	10
+-0.27064424572443174	NULL	archery	0	11
+-0.2658914822081928	NULL	camcorders	0	12
+-0.4931384912580122	Books	NULL	0	1
+-0.4590596324051084	Books	self-help	0	2
+-0.4536141548633751	Books	romance	0	3
+-0.45309723975037364	Books	parenting	0	4
+-0.4524285029414612	Books	home repair	0	5
+-0.43981106600972997	Books	arts	0	6
+-0.4377169656280006	Books	computers	0	7
+-0.4361708002391878	Books	entertainments	0	8
+-0.43351068602360127	Books	business	0	9
+-0.42933247849990414	Books	cooking	0	10
+-0.4277669807072638	Books	history	0	11
+-0.426950864001375	Books	sports	0	12
+-0.4252222609888063	Books	fiction	0	13
+-0.42138982555517424	Books	travel	0	14
+-0.4131085045307255	Books	reference	0	15
+-0.4079315942292845	Books	science	0	16
+-0.4024526234637209	Books	mystery	0	17
+-0.5197287408254059	Children	NULL	0	1
+-0.44395496111990124	Children	infants	0	2
+-0.4411662761355679	Children	toddlers	0	3
+-0.4393891246475332	Children	newborn	0	4
+-0.4315344357280318	Children	school-uniforms	0	5
+-0.48111115518133335	Electronics	scanners	0	1
+-0.4747624399994956	Electronics	wireless	0	2
+-0.4688136672219928	Electronics	musical	0	3
+-0.45964361686942834	Electronics	audio	0	4
+-0.45928545493036915	Electronics	portable	0	5
+-0.45766868256713106	Electronics	automotive	0	6
+-0.45059679325892127	Electronics	personal	0	7
+-0.44658684174291724	Electronics	karoke	0	8
+-0.44475849078129726	Electronics	camcorders	0	9
+-0.4424344973018403	Electronics	stereo	0	10
+-0.4356333942508264	Electronics	monitors	0	11
+-0.43006222255725823	Electronics	disk drives	0	12
+-0.429564781159828	Electronics	dvd/vcr players	0	13
+-0.42779157418952823	Electronics	televisions	0	14
+-0.42748482637369856	Electronics	cameras	0	15
+-0.4178964056015796	Electronics	memory	0	16
+-0.4582067115832434	Home	wallpaper	0	1
+-0.45812351000722207	Home	rugs	0	2
+-0.4539088661043885	Home	blinds/shades	0	3
+-0.4508047727200269	Home	tables	0	4
+-0.4500058160895336	Home	bedding	0	5
+-0.4444292094705594	Home	paint	0	6
+-0.4429001602838517	Home	kids	0	7
+-0.44195666541862305	Home	decor	0	8
+-0.4402700003348906	Home	curtains/drapes	0	9
+-0.43673314302002914	Home	accent	0	10
+-0.4296055258264408	Home	glassware	0	11
+-0.421292744888556	Home	flatware	0	12
+-0.41960622296567546	Home	mattresses	0	13
+-0.416796805054778	Home	furniture	0	14
+-0.41613781444454456	Home	bathroom	0	15
+-0.3974459837251846	Home	lighting	0	16
+-0.2750867830450022	Home	NULL	0	17
+-0.4820225565811954	Jewelry	consignment	0	1
+-0.4529231144574018	Jewelry	gold	0	2
+-0.44226642074734285	Jewelry	womens watch	0	3
+-0.4389580363093471	Jewelry	semi-precious	0	4
+-0.43752822100984157	Jewelry	NULL	0	5
+-0.4356905285786238	Jewelry	bracelets	0	6
+-0.43463136229782146	Jewelry	birdal	0	7
+-0.4345265103769585	Jewelry	loose stones	0	8
+-0.43340689540104116	Jewelry	rings	0	9
+-0.4307545748633846	Jewelry	estate	0	10
+-0.4297359214025995	Jewelry	pendants	0	11
+-0.4220795010466254	Jewelry	earings	0	12
+-0.4175115387790974	Jewelry	costume	0	13
+-0.4126035347428187	Jewelry	jewelry boxes	0	14
+-0.41251547672854466	Jewelry	mens watch	0	15
+-0.40542576815272136	Jewelry	custom	0	16
+-0.403668590374867	Jewelry	diamonds	0	17
+-0.44073645117906235	Men	sports-apparel	0	1
+-0.4379009113337668	Men	accessories	0	2
+-0.4359143677043787	Men	pants	0	3
+-0.4236055989047427	Men	shirts	0	4
+Time taken: 17.965 seconds, Fetched 100 row(s)
