@@ -1,39 +1,51 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-scale = "100g"
 
-k8_dir = f"report/{scale}-kubernetes"
-yarn_dir = f"report/{scale}-yarn"
+def performance(scale: str):
+    k8_dir = f"report/{scale}-kubernetes"
+    yarn_dir = f"report/{scale}-yarn"
 
-res_files = [f"query{str(i).zfill(2)}" for i in range(1, 99)]
+    res_files = [f"query{str(i).zfill(2)}" for i in range(1, 99)]
 
-summary_file = "run_summary.txt"
-
-
-def performance():
-
+    summary_file = "run_summary.txt"
     k8s_summary = f"{k8_dir}/{summary_file}"
     yarn_summary = f"{yarn_dir}/{summary_file}"
 
-    k8s_df = pd.read_csv(
-        k8s_summary,
-        skiprows=3,
-        delim_whitespace=True,
-        header=None,
-        names=["Query", "Time", "Rows"],
+    k8s_df = (
+        pd.read_csv(
+            k8s_summary,
+            skiprows=3,
+            delim_whitespace=True,
+            header=None,
+            names=["Query", "Time", "Rows"],
+        )
+        .groupby("Query", as_index=False)
+        .sum()
     )
-    yarn_df = pd.read_csv(
-        yarn_summary,
-        skiprows=3,
-        delim_whitespace=True,
-        header=None,
-        names=["Query", "Time", "Rows"],
+
+    yarn_df = (
+        pd.read_csv(
+            yarn_summary,
+            skiprows=3,
+            delim_whitespace=True,
+            header=None,
+            names=["Query", "Time", "Rows"],
+        )
+        .groupby("Query", as_index=False)
+        .sum()
     )
 
     # 데이터 병합
     merged_df = pd.merge(
-        k8s_df, yarn_df, on=["Query", "Rows"], suffixes=("_k8s", "_yarn")
+        yarn_df,
+        k8s_df,
+        how="left",
+        on=["Query", "Rows"],
+        suffixes=(
+            "_yarn",
+            "_k8s",
+        ),
     )
     assert not merged_df.empty, "Data merge resulted in an empty DataFrame"
 
@@ -49,30 +61,29 @@ def performance():
     plt.xticks(x, [q.replace("query", "") for q in queries], rotation="vertical")
     plt.xlabel("Query")
     plt.ylabel("Time (s)")
-    plt.title("Kubernetes vs Yarn Query Performance")
+    plt.title(f"Kubernetes vs Yarn Query Performance ({scale})")
     plt.legend()
     plt.tight_layout()
-    plt.savefig("performance_comparison.png")
+    plt.savefig(f"performance_report_{scale}.png")
     plt.show()
 
-    # 배율 계산
-    merged_df["Speedup_Yarn"] = merged_df["Time_k8s"] / merged_df["Time_yarn"]
-    merged_df["Speedup_K8s"] = merged_df["Time_yarn"] / merged_df["Time_k8s"]
+    # Row 컬럼 제거
+    merged_df = merged_df.drop(columns=["Rows"])
 
-    # yarn이 더 빠른 배율이 큰 쿼리 5개
-    top_5_yarn_faster = merged_df.nlargest(5, "Speedup_Yarn")
+    # 증감률 계산
+    merged_df["Change_Rate"] = round(
+        (merged_df["Time_k8s"] - merged_df["Time_yarn"]) / merged_df["Time_yarn"] * 100,
+        2,
+    )
 
-    # kubernetes가 더 빠른 배율이 큰 쿼리 5개
-    top_5_k8s_faster = merged_df.nlargest(5, "Speedup_K8s")
+    # 평균 증감률
+    avg_change_rate = merged_df["Change_Rate"].mean()
+    print(f"Average change rate: {avg_change_rate:.2f}%")
 
-    print("Top 5 queries where Yarn is faster:")
-    for _, row in top_5_yarn_faster.iterrows():
-        print(f"{row['Query']}: {row['Speedup_Yarn']:.2f}x faster")
-
-    print("\nTop 5 queries where Kubernetes is faster:")
-    for _, row in top_5_k8s_faster.iterrows():
-        print(f"{row['Query']}: {row['Speedup_K8s']:.2f}x faster")
+    avg_row = pd.DataFrame([{"Query": "Average", "Change_Rate": avg_change_rate}])
+    merged_df = pd.concat([merged_df, avg_row], ignore_index=True)
+    merged_df.to_csv(f"performance_report_{scale}.csv", index=False)
 
 
-performance()
-
+performance("1g")
+performance("100g")
